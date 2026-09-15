@@ -1,0 +1,84 @@
+/* Header.css */
+
+/* General Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #333; /* Dark background color */
+  color: white;
+  font-family: 'Arial', sans-serif;
+}
+
+.header .logo {
+  display: flex;
+  align-items: center;
+}
+
+.header .logo img {
+  width: 60px; /* Adjust the width of the logo */
+  height: auto;
+  margin-right: 15px;
+  border-radius: 50%; /* Optional: Makes the logo rounded */
+}
+
+.header h1 {
+  font-size: 2rem;
+  color: #b97d37; /* Gold color for the restaurant name */
+  margin: 0;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #b97d37; /* Gold color on hover */
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .header .logo {
+    margin-bottom: 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .header h1 {
+    font-size: 1.5rem;
+  }
+
+  .header .logo img {
+    width: 50px; /* Smaller logo on mobile */
+  }
+}

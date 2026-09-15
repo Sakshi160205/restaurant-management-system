@@ -1,0 +1,46 @@
+
+.order-section {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    margin-top: 30px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: none; /* Hidden by default, visible when items are added */
+  }
+  
+  .order-section.visible {
+    display: block;
+  }
+  
+  h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .order-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .order-item span {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .place-order-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+  }
+  
+  
